@@ -1,4 +1,12 @@
 # nlp-03-text-exploration
+Alissa Beaderstadt - Graduate Student - Data Analytics
+
+This repository contains my custom work for Project 3: Text Exploration. The notebook walks through preprocessing and analyzing a small text corpus step by step. It tokenizes text, lowercases everything, removes punctuation (and stopwords), and cleans the data. Then it uses Polars to count token frequencies, explore co-occurrence patterns, and visualize the results so you can see how text structure emerges.
+
+I first ran the provided example notebook and then copied it to create my own version where I experimented with modifications and analysis.
+
+- Starter file: nlp_corpus_explore_case.ipynb
+- Custom file: nlp_corpus_explore_beaderstadt.ipynb
 
 [![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](#)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
@@ -142,6 +150,19 @@ git push -u origin main
 
 - Use the **UP ARROW** and **DOWN ARROW** in the terminal to scroll through past commands.
 - Use `CTRL+f` to find (and replace) text within a file.
+
+## My Project Modifications
+
+To make this project my own, I made several small modifications to the example notebook.
+
+1. Added a stopwords filter to section 3 to further clean the text.
+2. Updated the window size from 2 to 3 to capture a slightly deeper context in co-occurrence analysis.
+3. Replaced the original case example bar chart with horizontal bar charts that plot the top 5 tokens for all categories in a 2x2 subplot grid (Dog / Cat / Car / Truck) for better readability.
+4. Observations:
+   - The horizontal bar charts make it much easier to see which tokens dominate each category at a glance.
+   - Even after cleaning and adjusting the window size, token distributions show clear separation by category.
+   - Co-occurrence patterns become slightly richer with the larger context window, revealing more neighboring words for each token.
+
 
 ## Terminology
 
