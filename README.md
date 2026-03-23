@@ -155,6 +155,7 @@ git push -u origin main
 
 To make this project my own, I made several small modifications to the example notebook.
 
+**Phase 4: Make a Technical Modification**
 1. Added a stopwords filter to section 3 to further clean the text.
 2. Updated the window size from 2 to 3 to capture a slightly deeper context in co-occurrence analysis.
 3. Replaced the original case example bar chart with horizontal bar charts that plot the top 5 tokens for all categories in a 2x2 subplot grid (Dog / Cat / Car / Truck) for better readability.
@@ -163,6 +164,14 @@ To make this project my own, I made several small modifications to the example n
    - Even after cleaning and adjusting the window size, token distributions show clear separation by category.
    - Co-occurrence patterns become slightly richer with the larger context window, revealing more neighboring words for each token.
 
+**Phase 5: Apply the Skills to a New Problem**
+1. Created a new corpus with 12 documents from the NIOSH article, assigned to 4 categories: Exposure, Guidance, Definition, and Regulatory.
+2. Updated the stopwords to {"the", "and", "is", "of", "to", "for", "are"} to better clean this specific dataset.
+3. Updated co-occurrence analysis so that Section 7 now targets the meaningful tokens from this dataset (hazardous, drugs, workers, exposure).
+4. Updated the horizontal bar charts in section 9 for the new 4 categories Exposure/Guidance/Definition/Regulatory.
+5. Added insights specific to the new dataset in section 10 (like top tokens and bigrams, patterns across categories).
+
+[Corpus sourced from the NIOSH List of Hazardous Drugs in Healthcare Settings (CDC, 2025)](https://www.cdc.gov/niosh/docs/2025-103/pdfs/2025-103.pdf?id=10.26616/NIOSHPUB2025103)
 
 ## Terminology
 
