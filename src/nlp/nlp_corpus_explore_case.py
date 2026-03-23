@@ -30,10 +30,13 @@ Run from root project folder with:
 
 from collections import defaultdict
 import logging
+import os
 from pathlib import Path
 
 from datafun_toolkit.logger import get_logger, log_header, log_path
 import matplotlib.pyplot as plt
+
+os.environ["POLARS_SKIP_CPU_CHECK"] = "1"
 import polars as pl
 
 print("Imports complete.")
